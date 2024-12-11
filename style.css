@@ -26,5 +26,90 @@ body {
     color: #fff; 
     text-decoration: none; 
     } 
-    /* Centering About and Contact sections */ .center-container { 
-    
+    /* Centering About and Contact sections */ 
+    .center-container { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        /* Center horizontally */ 
+        justify-content: center; 
+        /* Center vertically */ 
+        min-height: 100vh; 
+        /* Ensure full viewport height */ 
+        text-align: center; 
+        /* Center text */ 
+        } 
+        /* About section */ 
+        #about { 
+        background-color: #fff; 
+        padding: 20px; 
+        margin: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); width: 80%; 
+        /* Control the width for better centering */ max-width: 600px; 
+        /* Max width to limit stretch on larger screens */ text-align: center; 
+        } 
+        /* Projects section */ 
+        #projects { 
+        display: flex; 
+        justify-content: space-between; 
+        padding: 20px; 
+        } 
+        #projects p { 
+            flex: 1; 
+            margin: 0 10px; 
+            } 
+            #projects ul {
+            list-style-type: none; 
+            padding: 0; 
+            } 
+            #projects li { 
+            background-color: #f4f4f4; 
+            border: 1px solid #ccc; 
+            margin-bottom: 10px; 
+            padding: 10px; 
+            } 
+            .Coding-projects li { 
+            background-color: #d9edf7; 
+            color: #31708f; 
+            } 
+            .Crocheting-projects li { 
+            background-color: #dff0d8; 
+            color: #3c763d; 
+            } 
+            /* Contact section */ 
+            #contact { 
+            background-color: #fff; 
+            padding: 20px; 
+            margin: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            width: 80%; 
+/* Control the width for better centering */ max-width: 600px; 
+/* Max width to limit stretch on larger screens */ } 
+#contact form { 
+display: flex;
+flex-direction: column; 
+gap: 10px; 
+} 
+#contact input, 
+#contact button { 
+padding: 10px; 
+border: 1px solid #ccc; 
+border-radius: 4px; 
+} 
+#contact button { 
+background-color: #28a745; 
+color: white; 
+cursor: pointer; 
+} 
+#contact button:hover { 
+background-color: #218838; 
+} 
+/* Footer styles */ 
+footer { 
+background-color: #333; 
+color: #fff; 
+text-align: center; 
+padding: 10px 0; 
+} 
